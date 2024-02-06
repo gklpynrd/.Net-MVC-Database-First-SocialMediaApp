@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 20.875" name="SocialMediaAppDb">
+  <DataContextMoniker Name="/SocialMediaAppDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d7c3aae9-f8ef-4cb6-9acb-5290f78e80cb" absoluteBounds="0.75, 10.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_Application" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ecb2af8-67fa-411d-ba45-20e6f8eff092" absoluteBounds="0.765, 11.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55dd73e2-e489-468b-b6de-14a63897b7d9" absoluteBounds="0.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58f7e438-95cf-493c-87e8-f47ab60134bc" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="298277c9-c8e0-4abe-ba4f-883a516586f6" absoluteBounds="9.25, 5.375, 2, 4.8477197265624987">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_Membership" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c523004e-e323-4562-b7e7-47609e081fbe" absoluteBounds="9.265, 5.835, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89bc18cb-6175-43a6-a800-13625efdef29" absoluteBounds="3.5, 6.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_Path" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86755d7e-9ac5-4d4d-9d7b-a300a08d84f6" absoluteBounds="3.515, 7.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f37645f-c1af-4183-93d7-5717b26313f6" absoluteBounds="6.25, 6.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_PersonalizationAllUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11d55629-8af2-45d9-8375-ac3236d4430a" absoluteBounds="6.265, 7.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1bf1825-e93f-4ba8-a2dc-631779f577f1" absoluteBounds="6.25, 10, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_PersonalizationPerUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a625d6d6-b582-4fea-9a1e-0f19c6dc9031" absoluteBounds="6.265, 10.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2faef305-dab6-4083-b37f-893c12b1552c" absoluteBounds="6.25, 13.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_Profile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e3cb72a3-4865-4392-b828-60ba5c23bdf2" absoluteBounds="6.265, 14.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0813c924-d7f3-40f8-ad2d-857a3c89661e" absoluteBounds="3.5, 9.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b156bd48-36b9-4c09-8e81-b9f9ea9dd943" absoluteBounds="3.515, 9.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52881522-11b6-4069-bd36-8976e974c978" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_SchemaVersion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbcbad3e-69e9-46ea-b0e0-1a2e38438382" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="87159390-7495-4bc8-ad5b-83f783313da1" absoluteBounds="3.5, 12.625, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9130a23-fa2e-4414-ac81-67eb771db847" absoluteBounds="3.515, 13.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb042135-1d8d-42df-b609-7ae17d1fae21" absoluteBounds="9.25, 11.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_UsersInRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="982d0f1a-ed1b-4745-a5a3-5b651210d071" absoluteBounds="9.265, 11.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8452621e-197c-4fbb-939f-5b35518f6086" absoluteBounds="6.75, 0.75, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/aspnet_WebEvent_Event" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6348d26-12ba-46de-9dce-400c0d5bb0c0" absoluteBounds="6.765, 1.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d75a3f61-428a-4c6d-8533-a678fcae7847" absoluteBounds="6.5, 19.25, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/Chat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b64b3f8-6f17-43ef-95f8-9f19adf5f1e2" absoluteBounds="6.515, 19.71, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ec2d614-275a-4da7-84e2-c4bc8e580dfa" absoluteBounds="9.25, 18.875, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ff6dc62-abc7-4407-9ff8-a16ca12ecf53" absoluteBounds="9.265, 19.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75685f63-efa9-4d23-9713-8fb6f42bac4c" absoluteBounds="6.25, 16.375, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/Post" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6084d80e-34ff-43c3-bbbd-557e41bc835c" absoluteBounds="6.265, 16.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b347775f-9c8e-45df-96f0-5a931467fcc1" absoluteBounds="9.25, 14.125, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/SocialMediaAppDbDataContext/UserChat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="53729854-745c-42c6-ab45-149c815e6607" absoluteBounds="9.265, 14.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 10.625); (1.75 : 6.09375); (9.25 : 6.09375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_Application/aspnet_Application_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="d7c3aae9-f8ef-4cb6-9acb-5290f78e80cb" />
+        <classShapeMoniker Id="298277c9-c8e0-4abe-ba4f-883a516586f6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 10.625); (2.2812525 : 7.66429768880208); (3.5 : 7.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_Application/aspnet_Application_aspnet_Path" />
+      <nodes>
+        <classShapeMoniker Id="d7c3aae9-f8ef-4cb6-9acb-5290f78e80cb" />
+        <classShapeMoniker Id="89bc18cb-6175-43a6-a800-13625efdef29" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.56814697265625); (6.25 : 7.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_Path/aspnet_Path_aspnet_PersonalizationAllUser" />
+      <nodes>
+        <classShapeMoniker Id="89bc18cb-6175-43a6-a800-13625efdef29" />
+        <classShapeMoniker Id="7f37645f-c1af-4183-93d7-5717b26313f6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.45359537760417); (5.875 : 8.82859537760417); (5.875 : 10.8854484049479); (6.25 : 10.8854484049479)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_Path/aspnet_Path_aspnet_PersonalizationPerUser" />
+      <nodes>
+        <classShapeMoniker Id="89bc18cb-6175-43a6-a800-13625efdef29" />
+        <classShapeMoniker Id="e1bf1825-e93f-4ba8-a2dc-631779f577f1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.54974659375); (4.5 : 11.54974659375); (4.5 : 10.8958968098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_Application/aspnet_Application_aspnet_Role" />
+      <nodes>
+        <classShapeMoniker Id="d7c3aae9-f8ef-4cb6-9acb-5290f78e80cb" />
+        <classShapeMoniker Id="0813c924-d7f3-40f8-ad2d-857a3c89661e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.6588451538462); (5.90884515384615 : 12.25); (8.875 : 12.25); (8.875 : 10.5977197265625); (9.25 : 10.2227197265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_User/aspnet_User_aspnet_Membership" />
+      <nodes>
+        <classShapeMoniker Id="87159390-7495-4bc8-ad5b-83f783313da1" />
+        <classShapeMoniker Id="298277c9-c8e0-4abe-ba4f-883a516586f6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.6542297692308); (5.9375 : 12.2167297692308); (5.9375 : 11.3594246074219); (6.25 : 11.3594246074219)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_User/aspnet_User_aspnet_PersonalizationPerUser" />
+      <nodes>
+        <classShapeMoniker Id="87159390-7495-4bc8-ad5b-83f783313da1" />
+        <classShapeMoniker Id="e1bf1825-e93f-4ba8-a2dc-631779f577f1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.3614005533854); (6.25 : 14.3614005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_User/aspnet_User_aspnet_Profile" />
+      <nodes>
+        <classShapeMoniker Id="87159390-7495-4bc8-ad5b-83f783313da1" />
+        <classShapeMoniker Id="2faef305-dab6-4083-b37f-893c12b1552c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 12.2035953776042); (1.75 : 13.7989005533854); (3.5 : 13.7989005533854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_Application/aspnet_Application_aspnet_User" />
+      <nodes>
+        <classShapeMoniker Id="d7c3aae9-f8ef-4cb6-9acb-5290f78e80cb" />
+        <classShapeMoniker Id="87159390-7495-4bc8-ad5b-83f783313da1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.031252 : 10.8958968098958); (5.031252 : 12.0416984049479); (5.85416666666667 : 12.0416984049479 : JumpStart); (6.02083333333333 : 12.0416984049479 : JumpEnd); (8.79166666666667 : 12.0416984049479 : JumpStart); (8.95833333333333 : 12.0416984049479 : JumpEnd); (9.25 : 12.0416984049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_Role/aspnet_Role_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="0813c924-d7f3-40f8-ad2d-857a3c89661e" />
+        <classShapeMoniker Id="cb042135-1d8d-42df-b609-7ae17d1fae21" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4 : 12.625); (4 : 12.177101702474); (9.25 : 12.177101702474)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_User/aspnet_User_aspnet_UsersInRole" />
+      <nodes>
+        <classShapeMoniker Id="87159390-7495-4bc8-ad5b-83f783313da1" />
+        <classShapeMoniker Id="cb042135-1d8d-42df-b609-7ae17d1fae21" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 19.7508455403646); (9.25 : 19.7508455403646)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/Chat/Chat_Message" />
+      <nodes>
+        <classShapeMoniker Id="d75a3f61-428a-4c6d-8533-a678fcae7847" />
+        <classShapeMoniker Id="7ec2d614-275a-4da7-84e2-c4bc8e580dfa" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 14.9728011067708); (4.5 : 17.2604484049479); (6.25 : 17.2604484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_User/aspnet_User_Post" />
+      <nodes>
+        <classShapeMoniker Id="87159390-7495-4bc8-ad5b-83f783313da1" />
+        <classShapeMoniker Id="75685f63-efa9-4d23-9713-8fb6f42bac4c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.9389539529247); (5.75 : 15.1889539529247); (5.75 : 15.7612939453125); (5.85416666666667 : 15.7612939453125 : JumpStart); (6.02083333333333 : 15.7612939453125 : JumpEnd); (8.96587584134615 : 15.7612939453125); (9.25 : 15.4771697866587)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_User/aspnet_User_UserChat" />
+      <nodes>
+        <classShapeMoniker Id="87159390-7495-4bc8-ad5b-83f783313da1" />
+        <classShapeMoniker Id="b347775f-9c8e-45df-96f0-5a931467fcc1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.9435693375401); (5.9375 : 15.3810693375401); (5.9375 : 15.8862939453125); (8.875 : 15.8862939453125); (9.25 : 15.5112939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/aspnet_User/aspnet_User_UserChat1" />
+      <nodes>
+        <classShapeMoniker Id="87159390-7495-4bc8-ad5b-83f783313da1" />
+        <classShapeMoniker Id="b347775f-9c8e-45df-96f0-5a931467fcc1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 19.25); (8.875 : 18.875); (8.875 : 15.9204171039663); (9.28412315865385 : 15.5112939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/SocialMediaAppDbDataContext/Chat/Chat_UserChat" />
+      <nodes>
+        <classShapeMoniker Id="d75a3f61-428a-4c6d-8533-a678fcae7847" />
+        <classShapeMoniker Id="b347775f-9c8e-45df-96f0-5a931467fcc1" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

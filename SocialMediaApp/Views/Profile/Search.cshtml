@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+}
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form action="/Profile/Search" method="post">
+                        <div class="input-group input-group-lg">
+                            <input type="search" class="form-control form-control-lg" name="UserName" placeholder="Profile Name">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-lg btn-default">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            @{ if (ViewBag.Profiles != null)
+                {
+                    foreach (SocialMediaApp.Models.aspnet_User user in ViewBag.Profiles)
+                    {
+                        <div class="row mt-3">
+                            <div class="col-md-10 offset-md-1">
+                                <div class="list-group">
+                                    <div class="list-group-item">
+                                        <div class="row">
+                                            <div class="col px-4">
+                                                <div>
+                                                    <div class="image">
+                                                        <img src="/Contents/dist/img/user2-160x160.jpg" class="img-circle elevation-2" style="width:auto;height:40px" alt="User Image" loading="lazy">
+                                                        <a href="/Profile/Index/@user.UserName" name="id" style="margin-left:20px;color:white">@user.UserName</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                        
+                }
+                    }
+            
+        </div>
+    </section>
+
+@*@section Scripts{
+    
+    }*@

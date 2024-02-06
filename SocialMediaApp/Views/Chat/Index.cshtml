@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Chats";
+    Layout = "~/Views/Shared/_chatlayout.cshtml";
+}
+
+@using SocialMediaApp.Models
+
+@section Chats{
+    @foreach (var item in ViewBag.Chats)
+    {
+        <li class="nav-item">
+            <a href="/Chat/Index/@item.ChatId" class="nav-link">
+                <i class="fa fa-home"></i>
+                <p>
+                    @item.aspnet_User1.UserName
+                </p>
+            </a>
+        </li>
+
+    }
+}
+
+
+@if (ViewBag.Chatter != null)
+{
+    <div class="col-md-12 ">
+        <!-- DIRECT CHAT WARNING -->
+        <div class="card card-success direct-chat direct-chat-warning shadow">
+            <div class="card-header">
+                <h3 class="card-title">@(((UserChat)ViewBag.Chatter).aspnet_User1.UserId == (Guid)Session["ID"] ?  ((UserChat)ViewBag.Chatter).aspnet_User.UserName:((UserChat)ViewBag.Chatter).aspnet_User1.UserName )</h3>
+
+                <div class="card-tools">
+                    <span title="3 New Messages" class="badge bg-danger">3</span>
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" title="Contacts" data-widget="chat-pane-toggle">
+                        <i class="fas fa-comments"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <div id="Chat" class="card-body overflow-auto" style="display:flex;flex-direction:column-reverse">
+                <!-- Conversations are loaded here -->
+                <div class="direct-chat-messages" style="height:72vh">
+
+                    @foreach (var item in (List<Message>)ViewBag.Chat)
+                    {
+
+                        if ((Guid)Session["ID"] == item.SenderId)
+                        {
+                            <!-- Message to the right -->
+                            <div class="direct-chat-msg right">
+                                <div class="direct-chat-infos clearfix">
+                                    <span class="direct-chat-name float-right">@User.Identity.Name</span>
+                                    <span class="direct-chat-timestamp float-right">23 Jan 2:05 pm -</span>
+                                </div>
+                                <!-- /.direct-chat-infos -->
+
+                                <img class="direct-chat-img" src="/Contents/dist/img/user3-128x128.jpg" alt="Message User Image">
+                                <!-- /.direct-chat-img -->
+                                <div class="direct-chat-text float-right" style="max-width: 100%; margin-right: 20px">
+                                    @item.MessageText
+                                </div>
+
+
+                                <!-- /.direct-chat-text -->
+                            </div>
+                        }
+                        else
+                        {
+                            <!-- Message. Default to the left -->
+                            <div class="direct-chat-msg">
+                                <div class="direct-chat-infos clearfix">
+                                    <span class="direct-chat-name float-left">@(((UserChat)ViewBag.Chatter).aspnet_User1.UserName)</span>
+                                    <span class="direct-chat-timestamp float-left">- 23 Jan 2:00 pm</span>
+                                </div>
+                                <!-- /.direct-chat-infos -->
+                                <div class="d-flex">
+                                    <img class="direct-chat-img" src="/Contents/dist/img/user1-128x128.jpg" alt="Message User Image">
+                                    <!-- /.direct-chat-img -->
+                                    <div class="direct-chat-text float-left" style="max-width: 100%;margin-left:20px">
+                                        @item.MessageText
+                                    </div>
+                                </div>
+
+                                <!-- /.direct-chat-text -->
+                            </div>
+                            <!-- /.direct-chat-msg -->
+                        }
+
+
+                    }
+                </div>
+                <!--/.direct-chat-messages-->
+                <!-- Contacts are loaded here -->
+                
+                <!-- /.direct-chat-pane -->
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                <form action="/Chat/Send/@(((UserChat)ViewBag.Chatter).Chat.id)" method="post">
+                    <div class="input-group">
+                        <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                        <span class="input-group-append">
+                            <button type="submit" class="btn btn-warning">Send</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <!-- /.card-footer-->
+        </div>
+        <!--/.direct-chat -->
+    </div>
+}

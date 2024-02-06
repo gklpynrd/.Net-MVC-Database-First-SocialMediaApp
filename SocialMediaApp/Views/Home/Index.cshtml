@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+@using SocialMediaApp.Models
+
+@model List<Post>
+
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="card" style="margin:auto;margin-bottom:25px">
+        <div class="container align-items-center">
+            <h5>Post Something</h5>
+            @using (Html.BeginForm("Create", "Post", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <textarea class="os-textarea" maxlength="250" name="PostText" style="width: 100%; background-color: #3f474e;border:hidden;min-height:100px;resize:none;margin-top:7.5px;color:white"></textarea>
+                <label for="file-upload" class="custom-file-upload" style="cursor: pointer; float: left; margin: 7px">
+                    <i class="fa fa-picture-o"></i>
+
+                </label>
+                <input type="file" id="file-upload" accept=".jpeg,.png,.jpg" name="ImageData" style="float:left;margin:7px;padding-top:1px;padding-left:4px;display:none" />
+                <input type="submit" value="Post" style="float: right; margin: 7px; background-color: #3f474e;color:white; border: none" />
+            }
+        </div>
+    </div>
+}
+
+
+
+@{
+    foreach (Post item in Model)
+    {
+
+        <div class="card" style="position:relative">
+            <div class="card-header" style="display: flex; align-items: center;min-height:60px">
+                <div class="image" style="width:auto;height:0px;display:flex;align-items:center">
+                    <img src=@(item.aspnet_User.ProfilePicture == null ? "/Contents/dist/img/user2-160x160.jpg":"/Profile/RetrieveImage"+item.aspnet_User.UserId) class="img-circle elevation-2" style="width:auto;height:40px" alt="User Image" loading="lazy">
+                    <a href="/Profile/Index/@item.aspnet_User.UserName" style="margin-left:10px;color:white">@item.aspnet_User.UserName</a>
+                </div>
+
+
+
+                <div class="card-tools" style="margin-left:auto">
+                    <button type="button" class="btn btn-tool" style="margin-bottom:20px" data-card-widget="collapse" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    @{
+                        if (item.aspnet_User.UserName == User.Identity.Name)
+                        {
+                            <a class="btn btn-tool" href="/Post/Delete/@item.Postid/?page=Home" style="margin-bottom:20px" title="Remove"><i class="fas fa-times"></i></a>
+                        }
+                    }
+                    @*<button type="button" class="btn btn-tool" style="margin-bottom:20px" data-card-widget="remove" title="Remove">
+            <i class="fas fa-times"></i>
+        </button>*@
+
+                </div>
+            
+            </div>
+            <div class="card-body" style="margin: auto; padding-left: 0px; padding-right: 0px">
+                <div class="container ">
+                    <img src="/Post/RetrieveImage/@item.Postid" style="height:100%; width: 100%;max-height:380px" />
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer" style="min-height:100px">
+                <span> @item.PostText</span>
+                <span style="float:right;padding-top:4rem;font-size:11px"> Posted On: @item.DateAdded</span>
+            </div>
+            <!-- /.card-footer-->
+        </div>
+    }
+}
+
+
+

@@ -1,0 +1,19 @@
+﻿    
+@{ 
+    var user = SocialMediaApp.Helpers.ConnectionHelper.Context.aspnet_Users.FirstOrDefault(x => x.UserName == User.Identity.Name);
+}
+
+
+
+@if (User.Identity.IsAuthenticated) 
+    {
+
+<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+    <div class="image">
+        <img src="@(user.ProfilePicture == null ? "/Contents/dist/img/user2-160x160.jpg":"/Profile/RetrieveImage"+user.UserId)" class="img-circle elevation-2" alt="User Image">
+    </div>
+    <div class="info">
+        <a href="/Profile/Index/@User.Identity.Name"name="UserName" class="d-block">@User.Identity.Name</a>
+    </div>
+</div>
+    }
