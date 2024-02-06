@@ -43,16 +43,16 @@
 
                 <div class="card-tools" style="margin-left:auto">
                     <button type="button" class="btn btn-tool" style="margin-bottom:20px" data-card-widget="collapse" title="Collapse">
-                        <i class="fas fa-minus"></i>
+                        <i class="fa fa-minus"></i>
                     </button>
                     @{
                         if (item.aspnet_User.UserName == User.Identity.Name)
                         {
-                            <a class="btn btn-tool" href="/Post/Delete/@item.Postid/?page=Home" style="margin-bottom:20px" title="Remove"><i class="fas fa-times"></i></a>
+                            <a class="btn btn-tool" href="/Post/Delete/@item.Postid/?page=Home" style="margin-bottom:20px" title="Remove"><i class="fa fa-times"></i></a>
                         }
                     }
                     @*<button type="button" class="btn btn-tool" style="margin-bottom:20px" data-card-widget="remove" title="Remove">
-            <i class="fas fa-times"></i>
+            <i class="fa fa-times"></i>
         </button>*@
 
                 </div>
